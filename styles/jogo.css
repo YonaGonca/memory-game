@@ -1,0 +1,580 @@
+
+/*Definir Grelha da pagina*/
+
+#content{
+    display: grid;
+    grid-template-columns: 75% 25%;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+/*Definir Grelha do tabuleiro*/
+#jogo{
+    grid-area: 1 / 1 / 2 / 2;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    background-color:#b4a08bc2;
+    border: 10px solid #764C25;
+    border-radius: 15px;
+    min-height: 80%;
+}
+
+/*Definir caixa de madeira*/
+
+#dados{
+    grid-area: 1 / 2 / 2 / 3;
+    background-image: url(../media/defaultbackground-y.jpg);
+    background-size: cover;
+    margin: 0px 0px 0px 10%;
+    border: 10px solid #764C25;
+}
+
+
+
+/*Caixa de tempo*/
+
+#tempo{
+    width: 60%;
+    margin: 5% auto;
+    filter: drop-shadow(5px 5px 3px black);
+}
+
+#pontos{
+    width: 60%;
+    margin: 5% auto;
+    filter: drop-shadow(5px 5px 3px black);
+}
+
+#tituloTempo, #tituloPontos{
+    background-color: #8E6C49;
+    text-align: center;
+    margin: 0px auto;
+    width: 70%;
+    border: 7px solid #764C25;
+    border-bottom: none;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+
+#tempo p, #pontos div p{
+    background-color: #C7C1BB;
+    margin: 0;
+    margin-left: -6px;
+    width: 100%;
+    text-align: center;
+    border: 7px solid #764C25;
+    border-radius: 20px;
+    font-size: 50px;
+    font-weight: bold;
+    color: #764C25;
+}
+
+#pontosObtidos{
+    display: grid;
+    grid-template-columns: auto;
+}
+
+#pontosObtidos1{
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+#pontosObtidos2, #pontosObtidos3, #pontosObtidos4{
+    display: none;
+}
+
+/*Caixa de Pontos restantes*/
+
+#restantes{
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/*Turno do jogador*/
+
+#turno{
+    color: #3b240e;
+    width: 80%;
+    margin: 5% auto 5% auto;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#turno div{
+    display: inline-block;
+    
+}
+
+#turno img{
+    height: 25px;
+    vertical-align: top;
+    margin-right: 10px;
+    filter: drop-shadow(1px 1px 2px black);
+}
+
+#nomeJogador{
+    padding: 10px;
+}
+
+/*Editar o input e o botão para inserir numeros*/
+
+input[type="text"]{
+    width: 20px;
+    margin: 0px 10px;
+}
+
+#virar{
+    margin-top: 3%;
+    width: 50%;
+}
+
+form{
+    text-align: center;
+    width:100%;
+    margin: 0px auto;
+}
+form p{
+    margin: 0;
+    padding: 0;
+    color: #3b240e;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+/*Editar o botão para terminar o jogo*/
+
+#terminar{
+    width:70%;
+    margin: 30px auto 0px auto;
+}
+
+#terminar input{
+    width:100%;
+}
+
+
+/*Definição das cartas*/
+
+.card{
+    margin: 5% auto;
+    position: relative;
+    width: 130px;
+    height: 130px;
+}
+
+.imagemCard1 .back{
+    background-image: url(../media/card-1.png);  
+}
+
+.imagemCard2 .back{
+    background-image: url(../media/card-2.png);
+}
+
+.imagemCard3 .back{
+    background-image: url(../media/card-3.png);
+}
+
+.imagemCard4 .back{
+    background-image: url(../media/card-4.png);
+}
+
+.imagemCard5 .back{
+    background-image: url(../media/card-5.png);
+}
+
+.imagemCard6 .back{
+    background-image: url(../media/card-6.png);
+}
+
+.imagemCard7 .back{
+    background-image: url(../media/card-7.png);
+}
+
+.imagemCard8 .back{
+    background-image: url(../media/card-8.png);
+}
+
+.imagemCard9 .back{
+    background-image: url(../media/card-9.png);
+}
+
+.imagemCard10 .back{
+    background-image: url(../media/card-10.png);
+}
+
+.imagemCard11 .back{
+    background-image: url(../media/card-11.png);
+}
+
+.imagemCard12 .back{
+    background-image: url(../media/card-12.png);
+}
+
+.imagemCard13 .back{
+    background-image: url(../media/card-13.png);
+}
+
+.imagemCard14 .back{
+    background-image: url(../media/card-14.png);
+}
+
+.imagemCard15 .back{
+    background-image: url(../media/card-15.png);
+}
+
+.imagemCard16 .back{
+    background-image: url(../media/card-16.png);
+}
+
+.imagemCard17 .back{
+    background-image: url(../media/card-17.png);
+}
+
+.imagemCard18 .back{
+    background-image: url(../media/card-18.png);
+}
+
+.imagemCard19 .back{
+    background-image: url(../media/card-19.png);
+}
+
+.imagemCard20 .back{
+    background-image: url(../media/card-20.png);
+}
+
+#card21, #card22, #card23, #card24, #card25, #card26, #card27, #card28, #card29, #card30, #card31, #card32, #card33, #card34, #card35, #card36, #card37, #card38, #card39, #card40{
+    display: none;
+}
+
+
+.front p{
+    color: #3b240e;
+    position: absolute;
+    font-weight: bold;
+    top: 78%;
+    left: 10%;
+    margin: 0;
+    padding: 0 4px;
+    background-color:#b4a08b54;
+}
+
+/*PupUps*/
+
+table{
+    width: 400px;
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    display: none;
+}
+
+#popUpMultijogador{
+    width: 500px;
+    top: 30%;
+}
+
+
+#caixaVitoria{
+    height: 100px;
+    line-height: 100px;
+    border: 5px solid #764C25;
+    margin: 1%;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+#caixaVitoria img{
+    width: 65px;
+    vertical-align: middle;
+    margin-top: -10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#popUpMultijogadorDerrota{
+    position: absolute;
+    top: 42%;
+    left: 30%;
+    width: 500px;
+    font-size: 55px;
+    font-weight: bold;
+    height: 120px;
+    line-height: 120px;
+    text-align: center;
+    display: none;
+
+}
+
+/*Responsive Web Design*/
+
+@media only screen and (max-width:1450px)  {
+
+    #tituloTempo, #tituloPontos{
+        font-size: 20px;
+    }
+    #tempo p, #pontos div p{
+        font-size: 30px;
+    }
+    #restantes{
+        padding: 8px 0px;
+        font-size: 18px;
+    }
+    #turno{
+        font-size: 18px;
+    }
+
+    form p{
+        font-size: 18px;
+    }
+    .card{
+        width: 100px;
+        height: 100px;
+    }
+
+    .card5x6e6x6{
+        width: 60px !important;
+        height: 60px !important;
+    }
+
+    .cardITW{
+        width: 50px !important;
+        height: 50px !important;
+    }
+
+    #terminar{
+        margin: 5px auto 0px auto;
+    }
+
+    table{
+        top:3%;
+    }
+}
+
+@media only screen and (max-width:1150px)  {
+
+
+    #content{
+        grid-template-columns: 100%;  
+    }
+
+    .card{
+        width: 80px;
+        height: 80px;
+    }
+
+    .cardITW{
+        width: 40px !important;
+        height: 40px !important;
+    }
+    
+
+    #jogo{
+        grid-area: 2 / 1 / 3 / 2;
+        padding: 5px;
+        border: 5px solid #764C25;
+    }
+    
+    #dados{
+        grid-area: 1 / 1 / 2 / 2;
+        display: grid;
+        grid-template-columns: 33.33% 33.33% 33.33%;
+        margin: 0;
+        margin-bottom: 1%;
+        border: 5px solid #764C25;
+    }
+
+    #tituloTempo, #tituloPontos{
+        font-size: 12px;
+        border: 3px solid #764C25;
+        border-bottom: none;
+    }
+    #tempo p, #pontos div p{
+        font-size: 15px;
+        border: 3px solid #764C25;
+    }
+
+    #tempo{
+        grid-area: 1 / 1 / 2 / 2;
+        margin-bottom: 0;
+    }
+
+    #pontos{
+        grid-area: 2 / 1 / 3 / 2;
+        margin-top: 0;
+    }
+
+    #turno{
+        grid-area: 1 / 2 / 2 / 3;
+        font-size: 15px;
+        margin-top: 2%;
+    }
+
+    #turno img{
+        height: 15px;
+    }
+
+    #restantes{
+        grid-area: 2 / 2 / 3 / 3;
+        font-size: 15px;
+    }
+
+    form p{
+        font-size: 15px;
+        margin-top: 1%;
+    }
+
+    #virar{
+        width: 30%;
+        height: 50%;
+        font-size: 15px;
+    }
+
+    input[type="text"]{
+        height: 20%;
+    }
+
+    #terminar{
+        grid-area: 2 / 3 / 3 / 4;
+        margin: 0 auto;
+        width: 60%;
+        padding: 0px auto;
+    }
+    
+    #terminar input{
+        margin-top: 5%;
+        font-size: 15px;
+        height: 50%;
+    }
+}
+
+@media only screen and (max-width:775px)  {
+    .card{
+        margin: 15% auto;
+    }
+
+    .cardITW{
+        width: 30px !important;
+        height: 30px !important;
+    }
+    
+    .front p{
+        font-size: 10px;
+    }
+
+    #restantes{
+        margin-bottom: 5%;
+    }
+
+    input[type="text"]{
+        height: 10%;
+        width: 10%;
+        font-size: 15px;
+    }
+
+    table{
+        top: 10%;
+        left: 10%;
+    }
+
+    #popUpMultijogadorDerrota{
+        left: 30%;
+        font-size: 25px;
+        width: 250px;
+        height: 100px;
+        line-height: 100px;
+    }
+    #popUpMultijogador{
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width:605px)  {
+    .card{
+        width: 70px;
+        height: 70px;
+        margin: 25% auto;
+    }
+
+    .card5x6e6x6{
+        width: 50px !important;
+        height: 50px !important;
+    }
+
+    .cardITW{
+        width: 20px !important;
+        height: 20px !important;
+    }
+    form p{
+        font-size: 12px;
+        margin-top: 5%;
+    }
+    #turno{
+        font-size: 12px;
+        width: 100%;
+    }
+    #restantes{
+        font-size: 12px;
+        width: 100%;
+    }
+
+    #terminar input{
+        font-size: 12px;
+        width: 120%;
+    }
+    
+}
+
+@media only screen and (max-width:485px)  {
+    #tituloTempo, #tituloPontos{
+        font-size: 10px;
+    }
+    .card{
+        width: 50px;
+        height: 50px;
+        margin: 40% auto;
+    }
+
+    #turno{
+        font-size: 10px;
+        width: 110%;
+    }
+    #restantes{
+        margin-bottom: 5%;
+        font-size: 10px;
+    }
+    .front p{
+        top: 73%;
+        left: 7%;
+    }
+    input[type="text"]{
+        height: 10%;
+        width: 10%;
+        font-size: 10px;
+    }
+    #virar{
+        width: 40%;
+        height: 40%;
+        font-size: 10px;
+    }
+    #terminar input{
+        margin-top: 10%;
+        font-size: 9px;
+        width: 120%;
+        height: 50%;
+    }
+}
+
+
+
+
+
+
+

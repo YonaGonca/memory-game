@@ -1,0 +1,99 @@
+
+/*Posição das caixa de Iniciar Sessão, Registo e Nova Palavra-Passe */
+
+.caixa{
+    position: absolute;
+    top: 0; bottom: 0;
+    left: 0; right: 0;
+    height: 280px;
+    margin: auto;
+    width: 360px;
+    background-size:cover;
+}
+
+.caixaRegisto{
+    height: 550px;
+}
+
+/*Posição e tamanho dos elementos das caixas*/
+
+h2{
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+form{
+    width: 300px;
+    margin-left: 20px;
+}
+
+form label{
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+form input{
+    width: 100%;
+}
+
+form select{
+    text-align: left;
+    width: 107%;
+}
+
+form input[type="submit"]{
+    width: 107%;
+}
+
+/*Posição, tamanho e estilos dos links secundarios*/
+
+#caixaTexto{
+    width: 300px;
+    padding: 10px 0px;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-weight: bold;
+}
+
+#caixaTexto p{
+    margin: 0;
+    padding: 2px 0px;
+}
+a:link, a:visited{
+    color: #764C25;
+}
+
+a:hover{
+    color: #a3540a;
+}
+
+/*Responsive Web Design*/
+
+
+@media only screen and (max-width:800px) {
+    .caixa{
+        width: 300px;
+    }
+
+    h1{
+        font-size: 30px;
+    }
+
+    form input{
+        width: 79%;
+    }
+    
+    form select{
+        width: 86%;
+    }
+    
+    form input[type="submit"]{
+        width: 86%;
+    }
+}

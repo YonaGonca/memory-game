@@ -1,0 +1,46 @@
+
+
+/*Definir grelha*/
+
+#grelha{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.geral{
+    height: 130px;
+}
+
+/*Estilos das tabelas*/
+
+table{
+    width: 100%;
+}
+
+
+/*Responsive Web Design*/
+
+@media only screen and (max-width:1500px) {
+    #grelha{
+        grid-template-columns: 33% 33% 33%;
+
+    }
+}
+
+@media only screen and (max-width:1050px) {
+    #grelha{
+        grid-template-columns: 50% 50%;
+
+    }
+}
+
+@media only screen and (max-width:750px) {
+    #grelha{
+        grid-template-columns: 100%;
+
+    }
+}
+
+

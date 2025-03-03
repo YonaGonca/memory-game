@@ -1,0 +1,224 @@
+
+/*Definir estilos para a coleção diferente dos diferentes elemento da pagina*/
+
+body{
+    background: url("../media/azulejos-background.jpg") fixed;
+}
+
+.card .front{
+    background-image: url(../media/cardtiles-back.png);
+}
+
+
+#jogo{
+    background-color: #8587c5cb;
+    border: 10px solid #11135E;
+}
+
+#dados{
+    background-image: url("../media/azulejosbackground.jpg");
+    background-size: cover;
+    border: 10px solid #11135E;
+    border-radius: 10px;
+}
+
+#tituloTempo, #tituloPontos{
+    background-color: #9C9EED;
+    border: 5px solid #11135E;
+    border-bottom: none;
+    color: #11135E;
+}
+
+#tempo p, #pontos div p{
+    background-color: #ffffff;
+    border: 5px solid #11135E;
+    color: #11135E;
+}
+
+#restantes{
+    color: #11135E;
+    background-color: #9C9EED;
+    border: 4px solid #11135E;
+}
+
+#turno{
+    color: #11135E;
+}
+
+#nomeJogador{
+    color: #11135E;
+    background-color: #9C9EED;
+    border: 4px solid #11135E;
+}
+
+form p{
+    color: #11135E;
+}
+
+input[type="text"], input[type="submit"]{
+    color: #11135E;
+    background-color: white;
+    border: 3px solid #11135E;
+}
+
+input[type="button"], input[type="submit"]{
+    background-color: #11135E;
+    border: 3px solid #ffffff;
+    color: #9C9EED;
+    outline: 3px solid #11135E;
+    box-shadow: 6px 6px 6px black;
+}
+
+input[type="button"]:hover, input[type="submit"]:hover{
+    box-shadow: 10px 10px 10px black;
+}
+
+.imagemCard1 .back{
+    background-image: url(../media/cardtiles-1.png);  
+}
+
+.imagemCard2 .back{
+    background-image: url(../media/cardtiles-2.png);
+}
+
+.imagemCard3 .back{
+    background-image: url(../media/cardtiles-3.png);
+}
+
+.imagemCard4 .back{
+    background-image: url(../media/cardtiles-4.png);
+}
+
+.imagemCard5 .back{
+    background-image: url(../media/cardtiles-5.png);
+}
+
+.imagemCard6 .back{
+    background-image: url(../media/cardtiles-6.png);
+}
+
+.imagemCard7 .back{
+    background-image: url(../media/cardtiles-7.png);
+}
+
+.imagemCard8 .back{
+    background-image: url(../media/cardtiles-8.png);
+}
+
+.imagemCard9 .back{
+    background-image: url(../media/cardtiles-9.png);
+}
+
+.imagemCard10 .back{
+    background-image: url(../media/cardtiles-10.png);
+}
+
+.imagemCard11 .back{
+    background-image: url(../media/cardtiles-11.png);  
+}
+
+.imagemCard12 .back{
+    background-image: url(../media/cardtiles-12.png);
+}
+
+.imagemCard13 .back{
+    background-image: url(../media/cardtiles-13.png);
+}
+
+.imagemCard14 .back{
+    background-image: url(../media/cardtiles-14.png);
+}
+
+.imagemCard15 .back{
+    background-image: url(../media/cardtiles-15.png);
+}
+
+.imagemCard16 .back{
+    background-image: url(../media/cardtiles-16.png);
+}
+
+.imagemCard17 .back{
+    background-image: url(../media/cardtiles-17.png);
+}
+
+.imagemCard18 .back{
+    background-image: url(../media/cardtiles-18.png);
+}
+
+.imagemCard19 .back{
+    background-image: url(../media/cardtiles-19.png);
+}
+
+.imagemCard20 .back{
+    background-image: url(../media/cardtiles-20.png);
+}
+
+.front p{
+    color: #ffffff;
+    background-color:#ffffff8e;
+}
+
+.elementoNav img{
+    filter: drop-shadow(5px 5px 2px black);
+}
+
+.elementoNav img:hover{
+    filter: drop-shadow(7px 7px 2px black); 
+}
+
+#popUpMultijogadorDerrota{
+    color: #11135E;
+    background-color: white;
+    border: 3px solid #11135E;
+}
+
+#popUpMultijogadorDerrota{
+    color: #11135E;
+    background-color: white;
+    border: 4px solid #11135E;
+}
+
+
+.cartaPequena{
+    border: 2px solid#11135E;
+}
+
+.titulo{
+    background-image: none;
+    background-color: #9C9EED;
+    border: 4px solid #11135E; 
+}
+
+.subtitulo{
+    padding: 7px;
+    background-image: none;
+    background-color: #9C9EED;
+    border-bottom: 4px solid #11135E;
+    border-right: 4px solid #11135E;
+}
+
+.subtitulo:first-child{
+    border-left: 4px solid #11135E;
+}
+
+.linha td{
+    background-color: white;
+}
+
+.linha td:first-child{
+    border-left: 4px solid #11135E;
+}
+
+.linha td:last-child{
+    border-right: 4px solid #11135E;
+}
+
+.ultimo td{
+    border-bottom: 4px solid #11135E;
+}
+
+#caixaVitoria{
+    color: #11135E;
+    border: 7px solid #11135E;
+    background-color: white;
+}

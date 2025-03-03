@@ -1,0 +1,290 @@
+
+
+/*Posição, animação e tamanho do logo*/
+h1 {
+    position: absolute;
+    width: 90%;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: drop-shadow(10px 10px 10px black);
+}
+
+h1 img:hover{
+    scale: 1.1;
+    transition: 1s;
+}
+
+h1 img {
+    width: 30%;
+}
+
+
+/*Opções para escolher Nova Conta, Iniciar sessão ou Informação*/
+
+.objeto {
+    width: 18%;
+    padding: 1.1% 0.5%;
+    text-align: center;
+    margin: 0.5%;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.objeto:hover {
+    box-shadow: 10px 10px 20px black;
+    transition: 0.25s;
+}
+
+#info {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    rotate: 10deg;
+}
+
+#novaconta {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    rotate: -10deg;
+}
+
+#iniciarsessao {
+    position: absolute;
+    top: 75%;
+    right: 40%;
+}
+
+/*Estilos para as cartas para decoração que estão viradas para baixo*/
+
+.card {
+    width: 170px;
+    height: 170px;
+}
+
+#card2 {
+    position: absolute;
+    top: 4%;
+    right: 36%;
+    rotate: -10deg;
+}
+
+#card2 .back {
+    background-image: url(../media/card-2.png);
+}
+
+#card3 {
+    position: absolute;
+    left: 13%;
+    top: 38%;
+    rotate: -15deg;
+}
+
+#card3 .back {
+    background-image: url(../media/card-3.png);
+}
+
+#card5 {
+    position: absolute;
+    bottom: 20%;
+    left: 25%;
+    rotate: -5deg;
+}
+
+#card5 .back {
+    background-image: url(../media/card-5.png);
+}
+
+#card7 {
+    position: absolute;
+    top: 58%;
+    right: 6%;
+    rotate: 10deg;
+}
+
+#card7 .back {
+    background-image: url(../media/card-7.png);
+}
+
+#card8 {
+    position: absolute;
+    top: 70%;
+    right: 25%;
+    rotate: -5deg;
+}
+
+#card8 .back {
+    background-image: url(../media/card-8.png);
+}
+
+/*Estilos para as cartas para decoração que estão viradas para cima*/
+
+#card1 {
+    position: absolute;
+    top: 11%;
+    left: 36%;
+    rotate: 10deg;
+}
+
+#card1 .front {
+    background-image: url(../media/card-1.png);
+}
+
+#card1 .back {
+    background-image: url(../media/card-back.png);
+}
+
+#card4 {
+    position: absolute;
+    bottom: 10%;
+    left: 6%;
+    rotate: 10deg;
+}
+
+#card4 .front {
+    background-image: url(../media/card-4.png);
+}
+
+#card4 .back {
+    background-image: url(../media/card-back.png);
+}
+
+#card6 {
+    position: absolute;
+    top: 35%;
+    right: 22%;
+    rotate: -10deg;
+}
+
+#card6 .front {
+    background-image: url(../media/card-6.png);
+}
+
+#card6 .back {
+    background-image: url(../media/card-back.png);
+}
+
+
+/*Responsive Web Design*/
+
+/*Diferentes tamanhos de ecra horizontal*/
+
+@media only screen and (max-width:1550px) {
+    .objeto {
+        font-size: 40px;
+    }
+
+    .card {
+        width: 130px;
+        height: 130px;
+    }
+}
+
+@media only screen and (max-width:1300px) {
+    .objeto {
+        font-size: 30px;
+    }
+
+    .card {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media only screen and (max-width:1000px) {
+    .objeto {
+        font-size: 25px;
+    }
+
+    .card {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media only screen and (max-width:900px) {
+    .objeto {
+        font-size: 20px;
+    }
+
+    .card {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+/*Ecra telemovel*/
+
+@media only screen and (max-width:810px) {
+    header h1 {
+        top: 10%;
+        width: 100%;
+    }
+
+    header img {
+        width: 50%;
+    }
+
+    .objeto {
+        width: 60%;
+        padding: 4% 0.5%;
+        font-size: 25px;
+    }
+
+    #iniciarsessao {
+        rotate: 0deg;
+        right: 17%;
+        top: 30%;
+    }
+    #novaconta {
+        rotate: 0deg;
+        left: 19%;
+        top: 50%;
+    }
+    #info {
+        rotate: 0deg;
+        right: 17%;
+        top: 70%;
+    }
+
+    #card1 {
+        top: 21%;
+        left: 5%;
+    }
+
+    #card2 {
+        top: 22%;
+        right: 3%;
+    }
+
+    #card3 {
+        left: 5%;
+        top: 42%;
+    }
+
+    #card4 {
+        bottom: 5%;
+        left: 15%;
+    }
+
+    #card5 {
+        bottom: 25%;
+        left: 5%;
+    }
+
+    #card6 {
+        top: 42%;
+        right: 3%;
+    }
+
+    #card7 {
+        top: 63%;
+        right: 3%
+    }
+
+    #card8 {
+        top: 85%;
+        right: 15%
+    }
+}

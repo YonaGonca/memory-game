@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Account | Memory Game</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/login.css">
+    <link rel="icon" type="image/x-icon" href="media/card-7.png">
+    <script src="scripts/login.js"></script>
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src="./media/titulo.png" alt="Logo do Jogo da Memoria"></a>
+    </header>
+    <main>
+        <div class="caixa caixaRegisto caixaMadeira">
+            <h2>New Account:</h2>
+            <form id="registoForm" name="registoForm">
+                <input type="text" required name="user" placeholder="Username:" value="" id="usuario" maxlength="9"/>
+                <input type="email" required name="mail" placeholder="Your E-mail:" value="" id="email"/>
+                <select name="faixa" id="faixa" required>
+                    <option value="escolher">Age:</option>
+                    <option value="infantil">0-12</option>
+                    <option value="adolencente">13-17</option>
+                    <option value="adulto">18-64</option>
+                    <option value="idoso">65 or more</option>
+                </select>
+                <select name="genero" id="genero" required>
+                    <option value="escolher">Genre:</option>
+                    <option value="masculino">Masculine</option>
+                    <option value="feminino">Feminine</option>
+                    <option value="outro">Other</option>
+                    <option value="nao">Prefer not to say</option>
+                </select>
+                <input type="password" placeholder="Password" name="palavraPasse" required/>
+                <input type="password" placeholder="Confirm Password" name="confirmarPalavraPasse" required/>
+                <input type="submit" value="Submit" />
+            </form>
+            
+        </div>
+    </main>
+
+    <nav>
+        <div id="voltar" class="elementoNav">
+            <a href="login.html"><img src="./media/seta.png" alt="Seta para voltar"></a>
+        </div>
+    </nav>
+</body>
+
+</html>

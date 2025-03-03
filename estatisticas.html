@@ -1,0 +1,563 @@
+
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statistics | Memory Game</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/estatisticas.css">
+    <link rel="icon" type="image/x-icon" href="media/card-19.png">
+    <script src="scripts/estatisticas.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="./media/titulo.png" alt="Logo do Jogo da Memoria">
+    </header>
+    <main>
+        <section id="grelha">
+            <table class="geral">
+                <tr>
+                    <th colspan="3" class="titulo">Statistics Single General</th>
+                </tr>
+                <tr>
+                    <th class="subtitulo">Number of Games</th>
+                    <th class="subtitulo">Total Time Played</th>
+                </tr>
+                <tr class="linha ultimo">
+                    <td id="jogosEstatisticasIndividuaisGerais">0</td>
+                    <td id="tempoEstatisticasIndividuaisGerais">0</td>
+                </tr>
+            </table>
+            <table class="geral">
+                <tr>
+                    <th colspan="3" class="titulo"><img src="media/card-back.png" alt="Carta pequena"
+                            class="cartaPequena">Statistics Single Animals<img src="media/card-back.png" alt="Carta pequena"
+                            class="cartaPequena"></th>
+                </tr>
+                <tr>
+                    <th class="subtitulo">Number of Games</th>
+                    <th class="subtitulo">Total Time Played</th>
+                </tr>
+                <tr class="linha ultimo">
+                    <td id="jogosEstatisticasIndividuaisAnimais">0</td>
+                    <td id="tempoEstatisticasIndividuaisAnimais">0</td>
+                </tr>
+            </table>
+            <table class="geral">
+                <tr>
+                    <th colspan="3" class="titulo"><img src="media/cardnatal-back.png" alt="Carta pequena"
+                            class="cartaPequena">Statistics Single Christmas<img src="media/cardnatal-back.png"
+                            alt="Carta pequena" class="cartaPequena"></th>
+                </tr>
+                <tr>
+                    <th class="subtitulo">Number of Games</th>
+                    <th class="subtitulo">Total Time Played</th>
+                </tr>
+                <tr class="linha ultimo">
+                    <td id="jogosEstatisticasIndividuaisNatal">0</td>
+                    <td id="tempoEstatisticasIndividuaisNatal">0</td>
+                </tr>
+            </table>
+            <table class="geral">
+                <tr>
+                    <th colspan="3" class="titulo"><img src="media/cardtiles-back.png" alt="Carta pequena"
+                            class="cartaPequena">Statistics Single Tiles<img src="media/cardtiles-back.png"
+                            alt="Carta pequena" class="cartaPequena"></th>
+                </tr>
+                <tr>
+                    <th class="subtitulo">Number of Games</th>
+                    <th class="subtitulo">Total Time Played</th>
+                </tr>
+                <tr class="linha ultimo">
+                    <td id="jogosEstatisticasIndividuaisAzulejos">0</td>
+                    <td id="tempoEstatisticasIndividuaisAzulejos">0</td>
+                </tr>
+            </table>
+            <table class="geral">
+                <tr>
+                    <th colspan="3" class="titulo">Statistics Multiplayer General</th>
+                </tr>
+                <tr>
+                    <th class="subtitulo">Total Points</th>
+                    <th class="subtitulo">Average Time</th>
+                </tr>
+                <tr class="linha ultimo">
+                    <td id="pontosEstatisticasMultijogadorGerais">0</td>
+                    <td id="tempoEstatisticasMultijogadorGerais">0</td>
+                </tr>
+            </table>
+            <table class="geral">
+                <tr>
+                    <th colspan="3" class="titulo"><img src="media/card-back.png" alt="Carta pequena"
+                            class="cartaPequena">Statistics Multiplayer Animals<img src="media/card-back.png" alt="Carta pequena"
+                            class="cartaPequena"></th>
+                </tr>
+                <tr>
+                    <th class="subtitulo">Total Points</th>
+                    <th class="subtitulo">Average Time</th>
+                </tr>
+                <tr class="linha ultimo">
+                    <td id="pontosEstatisticasMultijogadorAnimais">0</td>
+                    <td id="tempoEstatisticasMultijogadorAnimais">0</td>
+                </tr>
+            </table>
+            <table class="geral">
+                <tr>
+                    <th colspan="3" class="titulo"><img src="media/cardnatal-back.png" alt="Carta pequena"
+                            class="cartaPequena">Statistics Multiplayer Christmas<img src="media/cardnatal-back.png"
+                            alt="Carta pequena" class="cartaPequena"></th>
+                </tr>
+                <tr>
+                    <th class="subtitulo">Total Points</th>
+                    <th class="subtitulo">Average Time</th>
+                </tr>
+                <tr class="linha ultimo">
+                    <td id="pontosEstatisticasMultijogadorNatal">0</td>
+                    <td id="tempoEstatisticasMultijogadorNatal">0</td>
+                </tr>
+            </table>
+            <table class="geral">
+                <tr>
+                    <th colspan="3" class="titulo"><img src="media/cardtiles-back.png" alt="Carta pequena"
+                            class="cartaPequena">Statistics Multiplayer Tiles<img src="media/cardtiles-back.png"
+                            alt="Carta pequena" class="cartaPequena"></th>
+                </tr>
+                <tr>
+                    <th class="subtitulo">Total Points</th>
+                    <th class="subtitulo">Average Time</th>
+                </tr>
+                <tr class="linha ultimo">
+                    <td id="pontosEstatisticasMultijogadorAzulejos">0</td>
+                    <td id="tempoEstatisticasMultijogadorAzulejos">0</td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th colspan="3" class="titulo"><img src="media/card-14.png" alt="Carta pequena"
+                        class="cartaPequena">Ranking 5x4<img src="media/cardtiles-12.png"
+                        alt="Carta pequena" class="cartaPequena"></th>
+                </tr>
+                <tr>
+                    <th class="subtitulo">Position</th>
+                    <th class="subtitulo">Name</th>
+                    <th class="subtitulo">Time</th>
+                </tr>
+                <tr class="linha">
+                    <td>
+                        <p class="primeiro">1</p>
+                    </td>
+                    <td id="Ranking1Nome5x4"></td>
+                    <td id="Ranking1Tempo5x4"></td>
+                </tr>
+                <tr class="linha">
+                    <td>
+                        <p class="segundo">2</p>
+                    </td>
+                    <td id="Ranking2Nome5x4"></td>
+                    <td id="Ranking2Tempo5x4"></td>
+                </tr>
+                <tr class="linha">
+                    <td>
+                        <p class="terceiro">3</p>
+                    </td>
+                    <td id="Ranking3Nome5x4"></td>
+                    <td id="Ranking3Tempo5x4"></td>
+                </tr>
+                <tr class="linha">
+                    <td>4</td>
+                    <td id="Ranking4Nome5x4"></td>
+                    <td id="Ranking4Tempo5x4"></td>
+                </tr>
+                <tr class="linha">
+                    <td>5</td>
+                    <td id="Ranking5Nome5x4"></td>
+                    <td id="Ranking5Tempo5x4"></td>
+                </tr>
+                <tr class="linha">
+                    <td>6</td>
+                    <td id="Ranking6Nome5x4"></td>
+                    <td id="Ranking6Tempo5x4"></td>
+                </tr>
+                <tr class="linha">
+                    <td>7</td>
+                    <td id="Ranking7Nome5x4"></td>
+                    <td id="Ranking7Tempo5x4"></td>
+                </tr>
+                <tr class="linha">
+                    <td>8</td>
+                    <td id="Ranking8Nome5x4"></td>
+                    <td id="Ranking8Tempo5x4"></td>
+                </tr>
+                <tr class="linha">
+                    <td>9</td>
+                    <td id="Ranking9Nome5x4"></td>
+                    <td id="Ranking9Tempo5x4"></td>
+                </tr>
+                <tr class="linha ultimo">
+                    <td>10</td>
+                    <td id="Ranking10Nome5x4"></td>
+                    <td id="Ranking10Tempo5x4"></td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th colspan="3" class="titulo"><img src="media/cardnatal-15.png" alt="Carta pequena"
+                        class="cartaPequena">Ranking 5x6<img src="media/card-12.png"
+                        alt="Carta pequena" class="cartaPequena"></th>
+                </tr>
+                <tr>
+                    <th class="subtitulo">Position</th>
+                    <th class="subtitulo">Name</th>
+                    <th class="subtitulo">Time</th>
+                </tr>
+                <tr class="linha">
+                    <td>
+                        <p class="primeiro">1</p>
+                    </td>
+                    <td id="Ranking1Nome5x6"></td>
+                    <td id="Ranking1Tempo5x6"></td>
+                </tr>
+                <tr class="linha">
+                    <td>
+                        <p class="segundo">2</p>
+                    </td>
+                    <td id="Ranking2Nome5x6"></td>
+                    <td id="Ranking2Tempo5x6"></td>
+                </tr>
+                <tr class="linha">
+                    <td>
+                        <p class="terceiro">3</p>
+                    </td>
+                    <td id="Ranking3Nome5x6"></td>
+                    <td id="Ranking3Tempo5x6"></td>
+                </tr>
+                <tr class="linha">
+                    <td>4</td>
+                    <td id="Ranking4Nome5x6"></td>
+                    <td id="Ranking4Tempo5x6"></td>
+                </tr>
+                <tr class="linha">
+                    <td>5</td>
+                    <td id="Ranking5Nome5x6"></td>
+                    <td id="Ranking5Tempo5x6"></td>
+                </tr>
+                <tr class="linha">
+                    <td>6</td>
+                    <td id="Ranking6Nome5x6"></td>
+                    <td id="Ranking6Tempo5x6"></td>
+                </tr>
+                <tr class="linha">
+                    <td>7</td>
+                    <td id="Ranking7Nome5x6"></td>
+                    <td id="Ranking7Tempo5x6"></td>
+                </tr>
+                <tr class="linha">
+                    <td>8</td>
+                    <td id="Ranking8Nome5x6"></td>
+                    <td id="Ranking8Tempo5x6"></td>
+                </tr>
+                <tr class="linha">
+                    <td>9</td>
+                    <td id="Ranking9Nome5x6"></td>
+                    <td id="Ranking9Tempo5x6"></td>
+                </tr>
+                <tr class="linha ultimo">
+                    <td>10</td>
+                    <td id="Ranking10Nome5x6"></td>
+                    <td id="Ranking10Tempo5x6"></td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th colspan="3" class="titulo"><img src="media/cardtiles-1.png" alt="Carta pequena"
+                        class="cartaPequena">Ranking 6x6<img src="media/cardnatal-2.png"
+                        alt="Carta pequena" class="cartaPequena"></th>
+                </tr>
+                <tr>
+                    <th class="subtitulo">Position</th>
+                    <th class="subtitulo">Name</th>
+                    <th class="subtitulo">Time</th>
+                </tr>
+                <tr class="linha">
+                    <td>
+                        <p class="primeiro">1</p>
+                    </td>
+                    <td id="Ranking1Nome6x6"></td>
+                    <td id="Ranking1Tempo6x6"></td>
+                </tr>
+                <tr class="linha">
+                    <td>
+                        <p class="segundo">2</p>
+                    </td>
+                    <td id="Ranking2Nome6x6"></td>
+                    <td id="Ranking2Tempo6x6"></td>
+                </tr>
+                <tr class="linha">
+                    <td>
+                        <p class="terceiro">3</p>
+                    </td>
+                    <td id="Ranking3Nome6x6"></td>
+                    <td id="Ranking3Tempo6x6"></td>
+                </tr>
+                <tr class="linha">
+                    <td>4</td>
+                    <td id="Ranking4Nome6x6"></td>
+                    <td id="Ranking4Tempo6x6"></td>
+                </tr>
+                <tr class="linha">
+                    <td>5</td>
+                    <td id="Ranking5Nome6x6"></td>
+                    <td id="Ranking5Tempo6x6"></td>
+                </tr>
+                <tr class="linha">
+                    <td>6</td>
+                    <td id="Ranking6Nome6x6"></td>
+                    <td id="Ranking6Tempo6x6"></td>
+                </tr>
+                <tr class="linha">
+                    <td>7</td>
+                    <td id="Ranking7Nome6x6"></td>
+                    <td id="Ranking7Tempo6x6"></td>
+                </tr>
+                <tr class="linha">
+                    <td>8</td>
+                    <td id="Ranking8Nome6x6"></td>
+                    <td id="Ranking8Tempo6x6"></td>
+                </tr>
+                <tr class="linha">
+                    <td>9</td>
+                    <td id="Ranking9Nome6x6"></td>
+                    <td id="Ranking9Tempo6x6"></td>
+                </tr>
+                <tr class="linha ultimo">
+                    <td>10</td>
+                    <td id="Ranking10Nome6x6"></td>
+                    <td id="Ranking10Tempo6x6"></td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th colspan="3" class="titulo"><img src="media/card-5.png" alt="Carta pequena"
+                        class="cartaPequena">Ranking ITW<img src="media/cardtiles-8.png"
+                        alt="Carta pequena" class="cartaPequena"></th>
+                </tr>
+                <tr>
+                    <th class="subtitulo">Position</th>
+                    <th class="subtitulo">Name</th>
+                    <th class="subtitulo">Time</th>
+                </tr>
+                <tr class="linha">
+                    <td>
+                        <p class="primeiro">1</p>
+                    </td>
+                    <td id="Ranking1NomeITW"></td>
+                    <td id="Ranking1TempoITW"></td>
+                </tr>
+                <tr class="linha">
+                    <td>
+                        <p class="segundo">2</p>
+                    </td>
+                    <td id="Ranking2NomeITW"></td>
+                    <td id="Ranking2TempoITW"></td>
+                </tr>
+                <tr class="linha">
+                    <td>
+                        <p class="terceiro">3</p>
+                    </td>
+                    <td id="Ranking3NomeITW"></td>
+                    <td id="Ranking3TempoITW"></td>
+                </tr>
+                <tr class="linha">
+                    <td>4</td>
+                    <td id="Ranking4NomeITW"></td>
+                    <td id="Ranking4TempoITW"></td>
+                </tr>
+                <tr class="linha">
+                    <td>5</td>
+                    <td id="Ranking5NomeITW"></td>
+                    <td id="Ranking5TempoITW"></td>
+                </tr>
+                <tr class="linha">
+                    <td>6</td>
+                    <td id="Ranking6NomeITW"></td>
+                    <td id="Ranking6TempoITW"></td>
+                </tr>
+                <tr class="linha">
+                    <td>7</td>
+                    <td id="Ranking7NomeITW"></td>
+                    <td id="Ranking7TempoITW"></td>
+                </tr>
+                <tr class="linha">
+                    <td>8</td>
+                    <td id="Ranking8NomeITW"></td>
+                    <td id="Ranking8TempoITW"></td>
+                </tr>
+                <tr class="linha">
+                    <td>9</td>
+                    <td id="Ranking9NomeITW"></td>
+                    <td id="Ranking9TempoITW"></td>
+                </tr>
+                <tr class="linha ultimo">
+                    <td>10</td>
+                    <td id="Ranking10NomeITW"></td>
+                    <td id="Ranking10TempoITW"></td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th colspan="3" class="titulo"><img src="media/cardnatal-9.png" alt="Carta pequena"
+                        class="cartaPequena">Ranking Trio Mode 5x6<img src="media/card-10.png"
+                        alt="Carta pequena" class="cartaPequena"></th>
+                </tr>
+                <tr>
+                    <th class="subtitulo">Position</th>
+                    <th class="subtitulo">Name</th>
+                    <th class="subtitulo">Time</th>
+                </tr>
+                <tr class="linha">
+                    <td>
+                        <p class="primeiro">1</p>
+                    </td>
+                    <td id="Ranking1Nome5x6Trio"></td>
+                    <td id="Ranking1Tempo5x6Trio"></td>
+                </tr>
+                <tr class="linha">
+                    <td>
+                        <p class="segundo">2</p>
+                    </td>
+                    <td id="Ranking2Nome5x6Trio"></td>
+                    <td id="Ranking2Tempo5x6Trio"></td>
+                </tr>
+                <tr class="linha">
+                    <td>
+                        <p class="terceiro">3</p>
+                    </td>
+                    <td id="Ranking3Nome5x6Trio"></td>
+                    <td id="Ranking3Tempo5x6Trio"></td>
+                </tr>
+                <tr class="linha">
+                    <td>4</td>
+                    <td id="Ranking4Nome5x6Trio"></td>
+                    <td id="Ranking4Tempo5x6Trio"></td>
+                </tr>
+                <tr class="linha">
+                    <td>5</td>
+                    <td id="Ranking5Nome5x6Trio"></td>
+                    <td id="Ranking5Tempo5x6Trio"></td>
+                </tr>
+                <tr class="linha">
+                    <td>6</td>
+                    <td id="Ranking6Nome5x6Trio"></td>
+                    <td id="Ranking6Tempo5x6Trio"></td>
+                </tr>
+                <tr class="linha">
+                    <td>7</td>
+                    <td id="Ranking7Nome5x6Trio"></td>
+                    <td id="Ranking7Tempo5x6Trio"></td>
+                </tr>
+                <tr class="linha">
+                    <td>8</td>
+                    <td id="Ranking8Nome5x6Trio"></td>
+                    <td id="Ranking8Tempo5x6Trio"></td>
+                </tr>
+                <tr class="linha">
+                    <td>9</td>
+                    <td id="Ranking9Nome5x6Trio"></td>
+                    <td id="Ranking9Tempo5x6Trio"></td>
+                </tr>
+                <tr class="linha ultimo">
+                    <td>10</td>
+                    <td id="Ranking10Nome5x6Trio"></td>
+                    <td id="Ranking10Tempo5x6Trio"></td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th colspan="3" class="titulo"><img src="media/cardtiles-4.png" alt="Carta pequena"
+                        class="cartaPequena">Ranking Trio Mode 6x6<img src="media/cardnatal-10.png"
+                        alt="Carta pequena" class="cartaPequena"></th>
+                </tr>
+                <tr>
+                    <th class="subtitulo">Position</th>
+                    <th class="subtitulo">Name</th>
+                    <th class="subtitulo">Time</th>
+                </tr>
+                <tr class="linha">
+                    <td>
+                        <p class="primeiro">1</p>
+                    </td>
+                    <td id="Ranking1Nome6x6Trio"></td>
+                    <td id="Ranking1Tempo6x6Trio"></td>
+                </tr>
+                <tr class="linha">
+                    <td>
+                        <p class="segundo">2</p>
+                    </td>
+                    <td id="Ranking2Nome6x6Trio"></td>
+                    <td id="Ranking2Tempo6x6Trio"></td>
+                </tr>
+                <tr class="linha">
+                    <td>
+                        <p class="terceiro">3</p>
+                    </td>
+                    <td id="Ranking3Nome6x6Trio"></td>
+                    <td id="Ranking3Tempo6x6Trio"></td>
+                </tr>
+                <tr class="linha">
+                    <td>4</td>
+                    <td id="Ranking4Nome6x6Trio"></td>
+                    <td id="Ranking4Tempo6x6Trio"></td>
+                </tr>
+                <tr class="linha">
+                    <td>5</td>
+                    <td id="Ranking5Nome6x6Trio"></td>
+                    <td id="Ranking5Tempo6x6Trio"></td>
+                </tr>
+                <tr class="linha">
+                    <td>6</td>
+                    <td id="Ranking6Nome6x6Trio"></td>
+                    <td id="Ranking6Tempo6x6Trio"></td>
+                </tr>
+                <tr class="linha">
+                    <td>7</td>
+                    <td id="Ranking7Nome6x6Trio"></td>
+                    <td id="Ranking7Tempo6x6Trio"></td>
+                </tr>
+                <tr class="linha">
+                    <td>8</td>
+                    <td id="Ranking8Nome6x6Trio"></td>
+                    <td id="Ranking8Tempo6x6Trio"></td>
+                </tr>
+                <tr class="linha">
+                    <td>9</td>
+                    <td id="Ranking9Nome6x6Trio"></td>
+                    <td id="Ranking9Tempo6x6Trio"></td>
+                </tr>
+                <tr class="linha ultimo">
+                    <td>10</td>
+                    <td id="Ranking10Nome6x6Trio"></td>
+                    <td id="Ranking10Tempo6x6Trio"></td>
+                </tr>
+            </table>
+        </section>
+    </main>
+
+    <nav>
+        <div id="voltar" class="elementoNav">
+            <a href="definiçoes.html"><img src="media/seta.png" alt="Logo para voltar"></a>
+        </div>
+        <div id="logout" class="elementoNav">
+            <img src="./media/logout.png" alt="Logo para Terminar Sessão">
+        </div>
+        <div id="topo" class="elementoNav">
+            <a href="#top"><img src="./media/seta.png" alt="Logo para voltar ao topo"></a>
+        </div>
+    </nav>
+    
+</body>
+
+</html>

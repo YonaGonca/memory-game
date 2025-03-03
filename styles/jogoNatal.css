@@ -1,0 +1,211 @@
+
+/*Definir estilos para a coleção diferente dos diferentes elemento da pagina*/
+
+body{
+    background: url("../media/natal-background.jpg") no-repeat fixed;
+    background-size: cover;
+}
+
+.card .front{
+    background-image: url(../media/cardnatal-back.png);
+}
+
+
+#jogo{
+
+    background-color: #8a7c5dcb;
+    border: 10px solid #521803;
+}
+
+#dados{
+    background-image: url("../media/natal-background-madeira.png");
+    background-size: cover;
+    border: 10px solid #521803;
+    border-radius: 10px;
+}
+
+form p{
+    color: #CBAA5B;
+}
+
+#tituloTempo, #tituloPontos{
+    background-color: #912d09;
+    border: 5px solid #521803;
+    border-bottom: none;
+    color: #521803;
+}
+
+#tempo p, #pontos div p{
+    background-color: #a37c6e;
+    border: 5px solid #521803;
+    color: #521803;
+}
+
+#restantes{
+    color: #af924e;
+    background-color: #FBE9C0;
+    border: 4px solid #af924e;
+}
+
+#turno{
+    color: #CBAA5B;;
+}
+
+#nomeJogador{
+    color: #af924e;
+    background-color: #FBE9C0;
+    border: 4px solid #af924e;
+}
+
+input[type="text"]{
+    color: #af924e;
+    background-color: #FBE9C0;
+    border: 3px solid #af924e;
+}
+
+input[type="button"],input[type="submit"]{
+    background-color: #034718;
+    border: 3px solid #71101A;
+    color: #af924e;
+    outline: 3px solid #034718;
+    outline: 3px solid #af924e;
+    box-shadow: 6px 6px 6px black;
+}
+
+input[type="button"]:hover, input[type="submit"]:hover{
+    box-shadow: 10px 10px 10px black;
+}
+
+.imagemCard1 .back{
+    background-image: url(../media/cardnatal-1.png);  
+}
+
+.imagemCard2 .back{
+    background-image: url(../media/cardnatal-2.png);
+}
+
+.imagemCard3 .back{
+    background-image: url(../media/cardnatal-3.png);
+}
+
+.imagemCard4 .back{
+    background-image: url(../media/cardnatal-4.png);
+}
+
+.imagemCard5 .back{
+    background-image: url(../media/cardnatal-5.png);
+}
+
+.imagemCard6 .back{
+    background-image: url(../media/cardnatal-6.png);
+}
+
+.imagemCard7 .back{
+    background-image: url(../media/cardnatal-7.png);
+}
+
+.imagemCard8 .back{
+    background-image: url(../media/cardnatal-8.png);
+}
+
+.imagemCard9 .back{
+    background-image: url(../media/cardnatal-9.png);
+}
+
+.imagemCard10 .back{
+    background-image: url(../media/cardnatal-10.png);
+}
+
+.imagemCard11 .back{
+    background-image: url(../media/cardnatal-11.png);  
+}
+
+.imagemCard12 .back{
+    background-image: url(../media/cardnatal-12.png);
+}
+
+.imagemCard13 .back{
+    background-image: url(../media/cardnatal-13.png);
+}
+
+.imagemCard14 .back{
+    background-image: url(../media/cardnatal-14.png);
+}
+
+.imagemCard15 .back{
+    background-image: url(../media/cardnatal-15.png);
+}
+
+.imagemCard16 .back{
+    background-image: url(../media/cardnatal-16.png);
+}
+
+.imagemCard17 .back{
+    background-image: url(../media/cardnatal-17.png);
+}
+
+.imagemCard18 .back{
+    background-image: url(../media/cardnatal-18.png);
+}
+
+.imagemCard19 .back{
+    background-image: url(../media/cardnatal-19.png);
+}
+
+.imagemCard20 .back{
+    background-image: url(../media/cardnatal-20.png);
+}
+
+.front p{
+    color: #af924e;
+    background-color:#af924e8e;
+}
+
+#popUpMultijogadorDerrota{
+    color: #af924e;
+    background-color: #FBE9C0;
+    border: 4px solid #af924e;
+}
+
+
+.cartaPequena{
+    border: 2px solid#521803;
+}
+
+.titulo{
+    background-image: url(../media/natal-background-madeira.png);
+    border: 4px solid #521803; 
+}
+
+.subtitulo{
+    padding: 7px;
+    background-image: url(../media/natal-background-madeira.png);
+    border-bottom: 4px solid #521803;
+    border-right: 4px solid #521803;
+}
+
+.subtitulo:first-child{
+    border-left: 4px solid #521803;
+}
+
+.linha td{
+    background-color: #a37c6e;
+}
+
+.linha td:first-child{
+    border-left: 4px solid #521803;
+}
+
+.linha td:last-child{
+    border-right: 4px solid #521803;
+}
+
+.ultimo td{
+    border-bottom: 4px solid #521803;
+}
+
+#caixaVitoria{
+    color: #521803;
+    border: 7px solid #521803;
+    background-color: #a37c6e;
+}

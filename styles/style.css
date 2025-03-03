@@ -1,0 +1,299 @@
+
+/*Definir background default e fonte para toda a web*/
+body{
+    background: url("../media/frontpage_background.png") no-repeat fixed;
+    background-size: cover;
+    font-family: Helvetica, sans-serif;
+}
+
+/*Estilo do logo em todas as paginas*/
+
+header{
+    text-align: center;
+}
+
+header img{
+    width: 10%;
+    margin-top: 0.5%;
+}
+
+
+/*Estilo das caixas em todas as paginas*/
+
+.caixaCarta, .caixaMadeira{
+    border: 5px solid #764C25;
+    box-shadow: 5px 5px 5px black;
+    border-radius: 15px;
+    text-decoration: none;
+}
+
+.caixaCarta{
+    background-color: #C7C1BB;
+    color: #764C25;
+}
+
+.caixaMadeira{
+    background-image: url("../media/defaultbackground.jpg");
+    color: #3b240e;
+}
+
+/*Estilo dos inputs em todas as paginas*/
+
+input[type="button"],input[type="submit"]{
+    height: 40px;
+    margin-top: 20px;
+    background-color: #764C25;
+    border: 3px solid #C7C1BB;
+    box-shadow: 2px 2px 1px black;
+    color: #C7C1BB;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+input[type="button"]:hover,input[type="submit"]:hover{
+    box-shadow: 4px 4px 3px black;
+    transition: 0.20s;
+}
+
+input[type="text"], input[type="password"], input[type="email"], select{
+    background-color: #C7C1BB;
+    margin-top: 25px;
+    border: 3px solid #764C25;
+    box-shadow: 2px 2px 1px black;
+    color: #764C25;
+    font-size: 18px;
+    padding: 7px;
+    border-radius: 6px;
+}
+
+input[type="text"]:hover, input[type="password"]:hover, input[type="email"]:hover, select:hover{
+    box-shadow: 4px 4px 3px black;
+    transition: 0.20s;
+}
+
+input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, select:focus{
+    box-shadow: 4px 4px 3px black;
+}
+
+form input{
+    border: none;
+    outline: none;
+}
+
+select{
+    text-align: center;
+}
+
+/*Estilo e animação das cartas em todas as paginas*/
+
+.card div{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transition: 0.25s;
+    filter: drop-shadow(3px 3px 3px black);
+
+}
+
+.card .front:hover{
+    filter: drop-shadow(12px 12px 10px black);
+}
+
+.card .back:hover{
+    filter: drop-shadow(12px 12px 10px black);
+}
+
+.card .front{
+    background-image: url(../media/card-back.png);
+    transform: perspective(500px) rotateY(0deg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.card .back{
+    transform: perspective(500px) rotateY(180deg);
+    filter: drop-shadow(7px 7px 7px black);
+}
+
+.animacao .front{
+    transform: perspective(500px) rotateY(180deg);
+}
+
+.animacao .back{
+    transform: perspective(500px) rotateY(360deg);
+}
+
+.back{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/*Estilos Nav*/
+
+.elementoNav img{
+    position: absolute;
+    width: 5%;
+    top: 1.5%;
+    filter: drop-shadow(5px 5px 5px black);
+}
+
+.elementoNav img:hover{
+    filter: drop-shadow(10px 10px 5px black);
+    transition: 0.25s;  
+}
+
+#voltar img{
+    left: 3%;
+}
+
+#estatisticas img{
+    right: 10%;
+}
+
+#logout img{
+    width: 4%;
+    right: 3%;
+}
+
+#topo img{
+    position: fixed;
+    top: 89%;
+    right: 0%;
+    width:5%;
+    rotate: 90deg;
+}
+
+/*tabelas*/
+
+table{
+    overflow: auto;
+    margin: 20px;
+    text-align: center;
+    border-spacing: 0px;
+    filter:drop-shadow(5px 5px 5px black) ;
+}
+
+.cartaPequena{
+    width: 25px;
+    vertical-align: middle;
+    margin: 0px 5px 0px 5px;
+    border: 2px solid#764C25;
+    border-radius: 5px;
+}
+
+.titulo{
+    background-image: url(../media/defaultbackground.jpg);
+    padding: 10px 0px;
+    border: 4px solid #764C25;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;  
+}
+
+.subtitulo{
+    padding: 7px;
+    background-image: url(../media/defaultbackground.jpg);
+    border-bottom: 4px solid #764C25;
+    border-right: 4px solid #764C25;
+}
+
+.subtitulo:first-child{
+    border-left: 4px solid #764C25
+}
+
+.linha td{
+    background-color: #C7C1BB;
+    padding: 7px;
+}
+
+.linha td:first-child{
+    border-left: 4px solid #764C25;
+}
+
+.linha td:last-child{
+    border-right: 4px solid #764C25;
+}
+
+.ultimo td{
+    border-bottom: 4px solid #764C25;
+}
+
+.ultimo td:first-child{
+    border-bottom-left-radius: 30px;
+}
+
+.ultimo td:last-child{
+    border-bottom-right-radius: 30px;
+}
+
+.primeiro{
+    width: 20px;
+    margin: 0;
+    padding: 5px;
+    display: inline-block;
+    background-color: goldenrod;
+    border: 0.5px solid rgb(161, 123, 26);
+    border-radius: 100px;
+}
+
+.segundo{
+    width: 20px;
+    margin: 0;
+    padding: 5px;
+    display: inline-block;
+    background-color: silver;
+    border: 0.5px solid rgb(121, 121, 121);
+    border-radius: 100px;
+}
+
+.terceiro{
+    width: 20px;
+    margin: 0;
+    padding: 5px;
+    display: inline-block;
+    background-color: #CD7F32;
+    border: 0.5px solid #855322;
+    border-radius: 100px;
+}
+
+/*Responsive Web Design do nav*/
+
+@media only screen and (max-width:1000px) {
+    .elementoNav img{
+        width: 50px;
+    }
+
+    header img{
+        width: 140px;
+    }
+
+    #logout img{
+        width: 42px;
+    }
+
+    #topo img{
+        width: 50px;
+    }
+}
+
+@media only screen and (max-width:900px) {
+    #estatisticas img{
+        right: 75px;
+    }
+}
+
+@media only screen and (max-width:450px) {
+    #estatisticas img, #voltar img{
+        width: 50px;
+        right: 60px;
+    }
+
+    #logout img{
+        width: 40px;
+    }
+}
+
+

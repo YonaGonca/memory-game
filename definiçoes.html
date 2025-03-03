@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings | Memory Game</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/definiçoes.css">
+    <script src="scripts/estatisticas.js"></script>
+    <script src="scripts/definiçoesJogo.js"></script>
+    <link rel="icon" type="image/x-icon" href="media/card-16.png">
+</head>
+
+<body>
+    <header>
+        <h1><img src="./media/titulo.png" alt="logo"></h1>
+    </header>
+    <main>
+        <div id="grelhaMadeira">
+            <section id="jogadores" class="caixaMadeira">
+                <h2 id="subtitulo" class="caixaCarta">Players</h2>
+                <div id="adicionar">
+                    <h3>Add players:</h3>
+                    <form name="adicionarForm" id="adicionarForm">
+                        <input type="email" placeholder="Your E-mail:" name="mail"/>
+                        <input type="password" placeholder="Password" name="palavraPasse">
+                        <input type="submit" value="Add" />
+                    </form>
+                </div>
+                <table id="lista" class="caixaCarta">
+                    <tr>
+                        <td>1</td>
+                        <td><img src="media/player1.png" alt="Avatar do Jogador 1"><span id="jogador1">Player 1</span></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td><img src="media/player2.png" alt="Avatar do Jogador 1"><span id="jogador2">Player 2</span></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td><img src="media/player3.png" alt="Avatar do Jogador 1"><span id="jogador3">Player 3</span></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td><img src="media/player4.png" alt="Avatar do Jogador 1"><span id="jogador4">Player 4</span></td>
+                    </tr>
+                </table>
+            </section>
+            <section id="cartasetabuleiro" class="caixaMadeira">
+                <h2 id="subtitulo" class="caixaCarta">Cards and Board</h2>
+                <div id="selectores">
+                    <h3>Choose the board configuration:</h3>
+                    <select name="tamanhoTabuleiro" id="tamanhoTabuleiro">
+                        <option value="5x4" id="5x4">5x4</option>
+                        <option value="5x6" id="5x6">5x6</option>
+                        <option value="6x6" id="6x6">6x6</option>
+                        <option value="ITW" id="ITW">ITW</option>
+                    </select>
+                    <h3>Choose the game style:</h3>
+                    <select name="estiloTabuleiro" id="estiloTabuleiro">
+                        <option value="animais">Animals</option>
+                        <option value="natal">Christmas</option>
+                        <option value="azulejos">Tiles</option>
+                    </select>
+                </div>
+                <div id="vistaPrevia">
+                    <h3>Preview:</h3>
+                    <img id="imagemVistaPrevia" src="media/previa5x4animais.png" alt="" class="caixaCarta">
+                </div>
+            </section>
+        </div>
+        <div id="grelhaCarta">
+            </section>
+            <div class="cartaOpçao card" id="botaoContrarelogio">
+                <div class="front">
+                    <p>Countd<img src="media/relogio.png" alt="">wn</p>
+                </div>
+                <div class="back caixaCarta" id="formDificuldade">
+                    <label class="check">Easy
+                        <input type="radio" checked value="facil" name="dificuldade">
+                    </label>
+                    <label class="check">Medium
+                        <input type="radio" value="intermedio" name="dificuldade">
+                    </label>
+                    <label class="check">Hard
+                        <input type="radio" value="dificil" name="dificuldade">
+                    </label>
+                </div>
+            </div>
+            <section id="botaoTrio" class="cartaOpçao">
+                <p>Trio</p>
+                <img id="primeira" src="media/card-trio.png" alt="">
+                <img id="segunda" src="media/card-trio.png" alt="">
+                <img id="terceira" src="media/card-trio.png" alt="">
+                <img id="modoTrioAtivado" src="media/check.png">
+            </section>
+            <div id="botaoIniciar" class="cartaOpçao caixaCarta">Start</div>
+        </div>
+    </main>
+
+    <nav>
+        <div id="estatisticas" class="elementoNav">
+            <a href="./estatisticas.html"><img src="./media/trophy.png" alt="Logo para as estatisticas"></a>
+        </div>
+        <div id="logout" class="elementoNav">
+            <img src="./media/logout.png" alt="Logo para Terminar Sessão">
+        </div>
+    </nav>
+</body>
+
+</html>
