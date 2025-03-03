@@ -39,7 +39,7 @@
 </p>
 
 <p align="center">
-  <h3>Christmas 6x6</h3>
+  <h3>Tiles 5x6</h3>
   <img src="media/previa5x6azulejos.png" alt="Descripción de la imagen" style="width: 500px; border-radius: 20px; border: 3px solid"/>
 </p>
 
